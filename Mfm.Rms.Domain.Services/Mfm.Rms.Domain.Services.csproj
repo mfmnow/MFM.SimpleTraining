@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mfm.Rms.Data.Contracts\Mfm.Rms.Data.Contracts.csproj" />
+    <ProjectReference Include="..\Mfm.Rms.Domain.Contracts\Mfm.Rms.Domain.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

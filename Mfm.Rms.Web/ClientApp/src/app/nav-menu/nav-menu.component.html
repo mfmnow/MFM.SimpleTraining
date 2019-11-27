@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container">
+    <a class='navbar-brand' [routerLink]='["/"]'>
+      <img src="/assets/rms.png" class="logo" alt="RMS logo">
+    </a>
+    <button (click)="toggle()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive" [ngClass]='{ "show": isExpanded }'>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]='["/create-training"]' (click)='collapse()'>Create Training</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://au.linkedin.com/in/mfmnow">LinkedIn Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/mfmnow">Github Account</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <a class="nav-link" [routerLink]='["/create-training"]' (click)='collapse()'>Create Training</a>
+</nav>
+
